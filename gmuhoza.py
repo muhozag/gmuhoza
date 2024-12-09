@@ -26,31 +26,40 @@ st.markdown("""
         right: 0;
         background-color: white;
         z-index: 999;
-        padding: 10px 0;
         border-bottom: 1px solid #dee2e6;
     }
     .main-content {
-        margin-top: 180px;  /* Adjust based on your header height */
+        margin-top: 180px;
     }
     .connect-section {
         text-align: right;
         padding: 10px 20px;
         background-color: white;
     }
+    /* New mobile-friendly navigation styles */
     .nav-menu {
         display: flex;
-        justify-content: center;
-        padding: 10px;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+        padding: 10px 5px;
         background-color: white;
+    }
+    .nav-menu::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
     }
     .nav-button {
         display: inline-block;
+        flex: 0 0 auto;
         padding: 10px 20px;
         margin: 0 5px;
         border-radius: 5px;
         text-decoration: none;
         font-weight: bold;
         text-align: center;
+        min-width: max-content;
     }
     .nav-button-1 {
         background-color: #e6e6e6;
@@ -63,13 +72,25 @@ st.markdown("""
     .content-section {
         padding: 20px 40px;
     }
+    /* Responsive connect section */
+    @media (max-width: 768px) {
+        .connect-section {
+            text-align: center;
+            padding: 10px;
+        }
+        .connect-section img {
+            height: 30px;
+        }
+        .main-content {
+            margin-top: 160px;
+        }
+    }
     /* Add scroll margin for section anchors */
     #home, #education, #certifications, #skills, #projects, #beyond {
-        scroll-margin-top: 180px;  /* Should match main-content margin-top */
+        scroll-margin-top: 180px;
     }
     </style>
 """, unsafe_allow_html=True)
-
 # Connect With Me section and Navigation Menu
 st.markdown("""
     <div class="sticky-top">

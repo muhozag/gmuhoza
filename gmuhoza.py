@@ -148,6 +148,10 @@ st.markdown("#### AWS Certifications")
 st.markdown("[AWS Solutions Architect Associate](https://www.credly.com/badges/c3ba01d1-8684-4f6d-aed2-3742d69f6ceb/public_url)")
 st.markdown("[AWS Certified AI Practitioner](https://www.credly.com/badges/b0e5ba36-4cd6-4c2e-94fe-2fc11c0d177f/public_url)")
 
+# Azure Certifications
+st.markdown("#### Azure Certifications")
+st.markdown("[Microsoft Certified: Azure Fundamentals ](https://learn.microsoft.com/api/credentials/share/en-us/GustaveMuhoza-6210/A63DF903563675DF?sharingId=611A5E0F1512DF0F)")
+
 # Kubernetes & Cloud Native
 st.markdown("#### Kubernetes & Cloud Native")
 st.markdown("[Certified Kubernetes Application Developer (CKAD)](https://www.credly.com/badges/2454ddd1-d3c2-42ad-8786-54ad13f3fb1f/public_url)")

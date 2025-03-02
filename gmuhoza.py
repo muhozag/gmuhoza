@@ -309,8 +309,8 @@ st.markdown("""
 ### Beyond Tech
 I believe in maintaining a well-rounded lifestyle that combines technical expertise with cultural interests:
 
-- ***Languages:*** Fluent in English, French, Kinyarwanda and Spanish; Currently learning Amharic
-- **Sports:** Passionate follower of La Liga soccer
+- ***Languages:*** Fluent in English, French, Kinyarwanda and Spanish; more than basic Swahili; currently learning Amharic
+- **Sports:** Passionate follower of La Liga soccer and Pittsburgh Steelers football
 - **Dance:** Salsa Dura, Bachata Classica
 """)
 st.markdown('</div>', unsafe_allow_html=True)

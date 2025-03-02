@@ -212,7 +212,7 @@ st.markdown("""
 st.markdown('<div id="home">', unsafe_allow_html=True)
 st.title("Welcome! 👋")
 st.header("I'm Gustave Muhoza")
-st.subheader("Data Engineer and Scientist/ Aspiring Data Engineer")
+st.subheader("Analytics Leader | Data Engineer and Scientist")
 
 # Brief introduction
 st.markdown("""

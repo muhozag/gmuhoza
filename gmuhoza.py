@@ -249,8 +249,7 @@ st.markdown("""
 st.markdown('<div id="home">', unsafe_allow_html=True)
 st.markdown('<div class="section-header"><h3>Welcome!</h3></div>', unsafe_allow_html=True)
 st.markdown('<div class="section-content">', unsafe_allow_html=True)
-st.title("Welcome! 👋")
-st.header("I'm Gustave Muhoza")
+st.title("Hello! 👋 I'm Gustave Muhoza")
 st.subheader("Analytics Leader | Data Engineer and Scientist")
 
 # Brief introduction

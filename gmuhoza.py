@@ -183,7 +183,7 @@ st.markdown("""
     /* Section styling */
     .section-header {
         padding: 10px 15px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         background-color: #f8f9fa;
         border-left: 5px solid #0077B5;
         border-radius: 0 5px 5px 0;
@@ -196,15 +196,15 @@ st.markdown("""
     }
     
     .section-content {
-        padding: 0 15px 30px 15px;
-        margin-bottom: 20px;
+        padding: 0 15px 15px 15px;
+        margin-bottom: 10px;
     }
     
     /* Section dividers */
     .section-divider {
         height: 2px;
         background-color: #f0f0f0;
-        margin: 40px 0;
+        margin: 20px 0;
         border: none;
     }
     

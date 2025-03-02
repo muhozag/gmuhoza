@@ -179,6 +179,43 @@ st.markdown("""
         max-width: 100%;
         height: auto;
     }
+    
+    /* Section styling */
+    .section-header {
+        padding: 10px 15px;
+        margin-bottom: 20px;
+        background-color: #f8f9fa;
+        border-left: 5px solid #0077B5;
+        border-radius: 0 5px 5px 0;
+    }
+    
+    .section-header h3 {
+        margin: 0;
+        color: #333;
+        font-weight: 600;
+    }
+    
+    .section-content {
+        padding: 0 15px 30px 15px;
+        margin-bottom: 20px;
+    }
+    
+    /* Section dividers */
+    .section-divider {
+        height: 2px;
+        background-color: #f0f0f0;
+        margin: 40px 0;
+        border: none;
+    }
+    
+    /* Subsection styling */
+    .subsection-header {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #555;
+        border-bottom: 2px solid #eaeaea;
+        padding-bottom: 5px;
+    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -210,6 +247,8 @@ st.markdown("""
 
 # Welcome section
 st.markdown('<div id="home">', unsafe_allow_html=True)
+st.markdown('<div class="section-header"><h3>Welcome!</h3></div>', unsafe_allow_html=True)
+st.markdown('<div class="section-content">', unsafe_allow_html=True)
 st.title("Welcome! 👋")
 st.header("I'm Gustave Muhoza")
 st.subheader("Analytics Leader | Data Engineer and Scientist")
@@ -222,92 +261,105 @@ spanning Computer Science and International Studies, I bring a unique perspectiv
 data-driven solutions.
 """)
 st.markdown('</div>', unsafe_allow_html=True)
+st.markdown('</div>', unsafe_allow_html=True)
 
 # Education Section
-st.markdown("---")
+st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 st.markdown('<div id="education">', unsafe_allow_html=True)
+st.markdown('<div class="section-header"><h3>Education</h3></div>', unsafe_allow_html=True)
+st.markdown('<div class="section-content">', unsafe_allow_html=True)
 st.markdown("""
-### Education
 - **Chief Data and Analytics Officer Executive Certificate** (Expected 2025)
 - **Master of Arts in International Studies** (2007)
 - **Bachelor of Science in Computer Science** (2004)
 """)
 st.markdown('</div>', unsafe_allow_html=True)
+st.markdown('</div>', unsafe_allow_html=True)
 
 # Certifications Section
-st.markdown("---")
+st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 st.markdown('<div id="certifications">', unsafe_allow_html=True)
-st.markdown("### Certifications")
+st.markdown('<div class="section-header"><h3>Certifications</h3></div>', unsafe_allow_html=True)
+st.markdown('<div class="section-content">', unsafe_allow_html=True)
 
 # AWS Certifications
-st.markdown("#### AWS Certifications")
+st.markdown('<div class="subsection-header">AWS Certifications</div>', unsafe_allow_html=True)
 st.markdown("[AWS Solutions Architect Associate](https://www.credly.com/badges/c3ba01d1-8684-4f6d-aed2-3742d69f6ceb/public_url)")
 st.markdown("[AWS Certified AI Practitioner](https://www.credly.com/badges/b0e5ba36-4cd6-4c2e-94fe-2fc11c0d177f/public_url)")
 
 # Azure Certifications
-st.markdown("#### Azure Certifications")
+st.markdown('<div class="subsection-header">Azure Certifications</div>', unsafe_allow_html=True)
 st.markdown("[Microsoft Certified: Azure Fundamentals ](https://learn.microsoft.com/api/credentials/share/en-us/GustaveMuhoza-6210/A63DF903563675DF?sharingId=611A5E0F1512DF0F)")
 
 # Kubernetes & Cloud Native
-st.markdown("#### Kubernetes & Cloud Native")
+st.markdown('<div class="subsection-header">Kubernetes & Cloud Native</div>', unsafe_allow_html=True)
 st.markdown("[Certified Kubernetes Application Developer (CKAD)](https://www.credly.com/badges/2454ddd1-d3c2-42ad-8786-54ad13f3fb1f/public_url)")
 st.markdown("[Kubernetes and Cloud Native Associate (KCNA)](https://www.credly.com/badges/42d74ff4-4dfa-4c32-a69b-b1a0a975c1ed/public_url)")
 
 # Security
-st.markdown("#### Security")
+st.markdown('<div class="subsection-header">Security</div>', unsafe_allow_html=True)
 st.markdown("[CompTIA Security+](https://www.credly.com/badges/efba6f70-0835-4cb5-8aeb-1e6d8b91f244/public_url)")
 
 # Project Management
-st.markdown("#### Project Management")
+st.markdown('<div class="subsection-header">Project Management</div>', unsafe_allow_html=True)
 st.markdown("[Johns Hopkins University AI Strategy and Project Management](https://www.coursera.org/account/accomplishments/specialization/GKINAQPFA23R)")
 st.markdown("[Certified SAFe 5 Government Practitioner](https://www.credly.com/badges/3c850285-15e8-435d-865a-53669e7a0c9f/public_url)")
 
 # Data Science
-st.markdown("#### Data Science")
+st.markdown('<div class="subsection-header">Data Science</div>', unsafe_allow_html=True)
 st.markdown("[IBM Professional Data Science Certificate](https://www.credly.com/badges/3efe72b3-d511-4b0a-b0ed-2db53c696ba6/public_url)")
 
 # Supply Chain Security
-st.markdown("#### Supply Chain Security")
+st.markdown('<div class="subsection-header">Supply Chain Security</div>', unsafe_allow_html=True)
 st.markdown("[Painless Vulnerability Management with Chainguard](https://www.credly.com/badges/aa4040e1-e054-4b2d-96b3-2f476bc3e066/public_url)")
 st.markdown("[Securing the AI/ML Supply Chain with Chainguard](https://www.credly.com/badges/80f5e9d5-bbd2-495e-992c-98eb044faac2/public_url)")
 st.markdown('</div>', unsafe_allow_html=True)
+st.markdown('</div>', unsafe_allow_html=True)
 
 # Technical Skills Section
-st.markdown("---")
+st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 st.markdown('<div id="skills">', unsafe_allow_html=True)
+st.markdown('<div class="section-header"><h3>Technical Skills</h3></div>', unsafe_allow_html=True)
+st.markdown('<div class="section-content">', unsafe_allow_html=True)
+st.markdown('<div class="subsection-header">Data Engineering & Big Data</div>', unsafe_allow_html=True)
 st.markdown("""
-### Technical Skills
-
-#### Data Engineering & Big Data
 - **Core Technologies:** ETL/ELT, Data Warehousing, Data Modeling
 - **Big Data Tools:** PySpark, Apache Kafka
 - **Cloud & Platforms:** AWS, Azure, Databricks
+""")
 
-#### Development & DevOps
+st.markdown('<div class="subsection-header">Development & DevOps</div>', unsafe_allow_html=True)
+st.markdown("""
 - **Programming Languages and Frameworks:** Python, SQL, JavaScript, Node.js, Django, Flask, React
 - **Version Control & CI/CD:** Git, GitHub, GitLab, CI/CD Pipelines
 - **Data Visualization:** PowerBI, QuickSight, Streamlit
+""")
 
-#### Data Science
+st.markdown('<div class="subsection-header">Data Science</div>', unsafe_allow_html=True)
+st.markdown("""
 - **Core Skills:** Machine Learning, Statistical Analysis
 - **Tools:** SageMaker
 """)
 st.markdown('</div>', unsafe_allow_html=True)
+st.markdown('</div>', unsafe_allow_html=True)
 
 # Projects Section
-st.markdown("---")
+st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 st.markdown('<div id="projects">', unsafe_allow_html=True)
+st.markdown('<div class="section-header"><h3>Featured Projects</h3></div>', unsafe_allow_html=True)
+st.markdown('<div class="section-content">', unsafe_allow_html=True)
 st.markdown("""
-### Featured Projects
 Always trying exciting data projects to learn the newest technologies of interest! Check my GitHub and GitLab profiles for more details.
 """)
 st.markdown('</div>', unsafe_allow_html=True)
+st.markdown('</div>', unsafe_allow_html=True)
 
 # Beyond Tech Section
-st.markdown("---")
+st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 st.markdown('<div id="beyond">', unsafe_allow_html=True)
+st.markdown('<div class="section-header"><h3>Beyond Tech</h3></div>', unsafe_allow_html=True)
+st.markdown('<div class="section-content">', unsafe_allow_html=True)
 st.markdown("""
-### Beyond Tech
 I believe in maintaining a well-rounded lifestyle that combines technical expertise with cultural interests:
 
 - ***Languages:*** Fluent in English, French, Kinyarwanda and Spanish; more than basic Swahili; currently learning Amharic
@@ -315,9 +367,10 @@ I believe in maintaining a well-rounded lifestyle that combines technical expert
 - **Dance:** Salsa Dura, Bachata Classica
 """)
 st.markdown('</div>', unsafe_allow_html=True)
+st.markdown('</div>', unsafe_allow_html=True)
 
 # Footer
-st.markdown("---")
+st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 st.write("Feel free to reach out for collaborations or discussions!")
 
 # Close the main-content div

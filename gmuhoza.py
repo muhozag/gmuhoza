@@ -152,18 +152,18 @@ st.markdown("""
     }
     
     /* Add scroll margin for section anchors */
-    #home, #education, #certifications, #skills, #projects, #beyond {
+    #home, #education, #experience, #certifications, #skills, #projects, #beyond {
         scroll-margin-top: 180px;
     }
     
     @media (max-width: 768px) {
-        #home, #education, #certifications, #skills, #projects, #beyond {
+        #home, #education, #experience, #certifications, #skills, #projects, #beyond {
             scroll-margin-top: 160px;
         }
     }
     
     @media (max-width: 576px) {
-        #home, #education, #certifications, #skills, #projects, #beyond {
+        #home, #education, #experience, #certifications, #skills, #projects, #beyond {
             scroll-margin-top: 150px;
         }
     }
@@ -236,10 +236,11 @@ st.markdown("""
         <div class="nav-menu">
             <a href="#home" class="nav-button nav-button-1">Home</a>
             <a href="#education" class="nav-button nav-button-2">Education</a>
-            <a href="#certifications" class="nav-button nav-button-1">Certifications</a>
-            <a href="#skills" class="nav-button nav-button-2">Technical Skills</a>
-            <a href="#projects" class="nav-button nav-button-1">Projects</a>
-            <a href="#beyond" class="nav-button nav-button-2">Beyond Tech</a>
+            <a href="#experience" class="nav-button nav-button-1">Professional Experience</a>
+            <a href="#certifications" class="nav-button nav-button-2">Certifications</a>
+            <a href="#skills" class="nav-button nav-button-1">Technical Skills</a>
+            <a href="#projects" class="nav-button nav-button-2">Projects</a>
+            <a href="#beyond" class="nav-button nav-button-1">Beyond Tech</a>
         </div>
     </div>
     <div class="main-content">
@@ -272,6 +273,84 @@ st.markdown("""
 - **Master of Arts in International Studies** (2007)
 - **Bachelor of Science in Computer Science** (2004)
 """)
+st.markdown('</div>', unsafe_allow_html=True)
+st.markdown('</div>', unsafe_allow_html=True)
+
+# Professional Experience Section
+st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
+st.markdown('<div id="experience">', unsafe_allow_html=True)
+st.markdown('<div class="section-header"><h3>Professional Experience</h3></div>', unsafe_allow_html=True)
+st.markdown('<div class="section-content">', unsafe_allow_html=True)
+
+# Data Engineer, ECS
+st.markdown('<div class="subsection-header">Data Engineer, ECS</div>', unsafe_allow_html=True)
+st.markdown('<p style="font-style: italic; color: #666;">April 2022-Present</p>', unsafe_allow_html=True)
+st.markdown('<p>Data Engineer on ECS Data and AI Services Team</p>', unsafe_allow_html=True)
+st.markdown("""
+- Currently leading a Zero Trust data architecture implementation initiative for the DevSecOps team to improve our security posture
+- Created a keyless signature system prototype for code, container images and other artifacts
+- Built GitLab CI/CD pipelines with integrated security scanning for use by our vendors and our clients
+- Automated data transfer workflows, streamlining cross security domain operations
+- Implemented a machine learning model vulnerability scanning framework for production deployments
+- Operated and updated a secure cross-domain transfer solutions for sensitive data, COTS and ML models
+- Optimized DevSecOps processes through automation and security control enhancement
+- Developed a model monitoring dashboard for tracking production ML deployments
+""")
+
+# Data Scientist, Child Care Aware of America
+st.markdown('<div class="subsection-header">Data Scientist, Child Care Aware of America</div>', unsafe_allow_html=True)
+st.markdown('<p style="font-style: italic; color: #666;">Sept 2020-April 2022</p>', unsafe_allow_html=True)
+st.markdown('<p>Responsible for the development and implementation of the organization\'s data strategy program</p>', unsafe_allow_html=True)
+st.markdown("""
+- Established and executed the organization\'s inaugural data strategy, aligning business goals with data-driven decision making
+- Founded and led the organization\'s Data Strategy Council, driving cross-functional collaboration and data governance initiatives
+- Architected a serverless end-to-end data analytics pipeline in AWS connecting multi-state childcare datasets, enabling nationwide analysis and reporting for the research and policy teams
+- Designed ML models and analytical frameworks for childcare research, improving policy decision accuracy
+- Mentored research teams on data science methodologies, statistical analysis, and hypothesis formulation
+""")
+
+# Data Specialist, District of Columbia Public Schools
+st.markdown('<div class="subsection-header">Data Specialist, District of Columbia Public Schools</div>', unsafe_allow_html=True)
+st.markdown('<p style="font-style: italic; color: #666;">June 2018-June 2020</p>', unsafe_allow_html=True)
+st.markdown('<p>Lead data analyst for the Early Childhood Education (ECE) Division\'s Head Start Program</p>', unsafe_allow_html=True)
+st.markdown("""
+- Automated data cleaning processes using Python, improving timely report delivery from 20% to 100%
+- Built statistical monitoring tool for classroom health and safety, achieving 84% improvement in evaluated schools
+- Developed incident reporting system for 60 Title I schools, enhancing compliance tracking and response time
+- Created interactive dashboards using data visualization tools for leadership reporting
+- Led data analytics collaboration meetings for ECE leadership and external stakeholders
+""")
+
+# Data Systems Manager, Northern Virginia Family Service
+st.markdown('<div class="subsection-header">Data Systems Manager, Northern Virginia Family Service</div>', unsafe_allow_html=True)
+st.markdown('<p style="font-style: italic; color: #666;">Aug 2012-June 2018</p>', unsafe_allow_html=True)
+st.markdown('<p>Lead project manager for a multiservice agency\'s Measurement Analysis and Research System (M.A.R.S)</p>', unsafe_allow_html=True)
+st.markdown("""
+- Led integration of 42 programs to a cloud-based system, managing 3-person team and improving outcomes monitoring
+- Managed system implementation involving the organization\'s leadership, business unit managers and vendors through discovery, development, testing, and deployment
+- Provided introductory and ongoing training, and technical and administrative supervision for all organization\'s data analysts and data owners
+- Developed a statistical reporting framework for program outcomes, enhancing service delivery efficiency
+""")
+
+# Management Information and Data Systems Associate, LAYC
+st.markdown('<div class="subsection-header">Management Information and Data Systems Associate, LAYC</div>', unsafe_allow_html=True)
+st.markdown('<p style="font-style: italic; color: #666;">Nov 2008-Aug 2012</p>', unsafe_allow_html=True)
+st.markdown('<p>Lead data analyst for the Community and Human Services Department of a non-profit organization managing a large data development project</p>', unsafe_allow_html=True)
+st.markdown("""
+- Led database administration and program development efforts, improving performance management capabilities
+- Created a metrics monitoring toolkit for program evaluation and optimization
+- Implemented data tracking procedures and trained staff on reporting protocols
+- Coordinated cross-departmental data reporting for stakeholders and program improvement
+""")
+
+# Research Assistant, Morgan State University
+st.markdown('<div class="subsection-header">Research Assistant, Morgan State University</div>', unsafe_allow_html=True)
+st.markdown('<p style="font-style: italic; color: #666;">Sept 2006-Aug 2007</p>', unsafe_allow_html=True)
+st.markdown("""
+- Provided research and organizational support to the department chairperson
+- Processed student and teacher evaluations and used SPSS to produce reports for grant-supported workshops and seminars which contributed to the retention of funding for these activities
+""")
+
 st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
 

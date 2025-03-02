@@ -10,8 +10,10 @@ st.set_page_config(
 # Custom CSS for navigation buttons and layout
 st.markdown("""
     <style>
+    /* Base styles */
     div.block-container {
         padding-top: 0;
+        max-width: 100%;
     }
     header {
         visibility: hidden;
@@ -19,6 +21,8 @@ st.markdown("""
     #MainMenu {
         visibility: hidden;
     }
+    
+    /* Sticky navigation */
     .sticky-top {
         position: fixed;
         top: 0;
@@ -27,16 +31,23 @@ st.markdown("""
         background-color: white;
         z-index: 999;
         border-bottom: 1px solid #dee2e6;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+    
+    /* Main content spacing */
     .main-content {
         margin-top: 180px;
+        padding: 0 15px;
     }
+    
+    /* Connect section */
     .connect-section {
         text-align: right;
         padding: 10px 20px;
         background-color: white;
     }
-    /* New mobile-friendly navigation styles */
+    
+    /* Navigation menu */
     .nav-menu {
         display: flex;
         overflow-x: auto;
@@ -50,6 +61,8 @@ st.markdown("""
     .nav-menu::-webkit-scrollbar {
         display: none; /* Chrome, Safari, Opera */
     }
+    
+    /* Navigation buttons */
     .nav-button {
         display: inline-block;
         flex: 0 0 auto;
@@ -60,6 +73,8 @@ st.markdown("""
         font-weight: bold;
         text-align: center;
         min-width: max-content;
+        -webkit-tap-highlight-color: rgba(0,0,0,0.1); /* Better touch feedback on iOS */
+        transition: background-color 0.2s ease;
     }
     .nav-button-1 {
         background-color: #e6e6e6;
@@ -69,36 +84,117 @@ st.markdown("""
         background-color: #f2f2f2;
         color: black;
     }
-    .content-section {
-        padding: 20px 40px;
+    .nav-button:active {
+        opacity: 0.8; /* Visual feedback when tapped */
     }
-    /* Responsive connect section */
+    
+    /* Content sections */
+    .content-section {
+        padding: 20px;
+    }
+    
+    /* Responsive styles */
+    @media (max-width: 992px) {
+        .main-content {
+            margin-top: 170px;
+        }
+        .content-section {
+            padding: 15px;
+        }
+    }
+    
     @media (max-width: 768px) {
         .connect-section {
             text-align: center;
             padding: 10px;
+        }
+        .connect-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
         }
         .connect-section img {
             height: 30px;
         }
         .main-content {
             margin-top: 160px;
+            padding: 0 10px;
+        }
+        .nav-button {
+            padding: 8px 15px;
+            font-size: 0.9rem;
         }
     }
+    
+    @media (max-width: 576px) {
+        .main-content {
+            margin-top: 150px;
+        }
+        h1 {
+            font-size: 1.8rem !important;
+        }
+        h2 {
+            font-size: 1.5rem !important;
+        }
+        h3 {
+            font-size: 1.3rem !important;
+        }
+        p, li {
+            font-size: 0.95rem !important;
+        }
+        .connect-section img {
+            height: 25px;
+        }
+        .nav-button {
+            padding: 6px 12px;
+            margin: 0 3px;
+            font-size: 0.85rem;
+        }
+    }
+    
     /* Add scroll margin for section anchors */
     #home, #education, #certifications, #skills, #projects, #beyond {
         scroll-margin-top: 180px;
     }
+    
+    @media (max-width: 768px) {
+        #home, #education, #certifications, #skills, #projects, #beyond {
+            scroll-margin-top: 160px;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        #home, #education, #certifications, #skills, #projects, #beyond {
+            scroll-margin-top: 150px;
+        }
+    }
+    
+    /* Improve touch targets for mobile */
+    a {
+        padding: 2px 0;
+        display: inline-block;
+    }
+    
+    /* Optimize images for mobile */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
     </style>
 """, unsafe_allow_html=True)
+
+# Add viewport meta tag for mobile responsiveness
+st.markdown("""
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+""", unsafe_allow_html=True)
+
 # Connect With Me section and Navigation Menu
 st.markdown("""
     <div class="sticky-top">
         <div class="connect-section">
             <h3>Connect With Me:</h3>
-            <a href="https://github.com/muhozag"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
-            <a href="https://gitlab.com/muhozag"><img src="https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white"></a>
-            <a href="https://www.linkedin.com/in/gustave-muhoza/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+            <a href="https://github.com/muhozag" aria-label="GitHub Profile"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+            <a href="https://gitlab.com/muhozag" aria-label="GitLab Profile"><img src="https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab"></a>
+            <a href="https://www.linkedin.com/in/gustave-muhoza/" aria-label="LinkedIn Profile"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
         </div>
         <div class="nav-menu">
             <a href="#home" class="nav-button nav-button-1">Home</a>
@@ -116,7 +212,7 @@ st.markdown("""
 st.markdown('<div id="home">', unsafe_allow_html=True)
 st.title("Welcome! 👋")
 st.header("I'm Gustave Muhoza")
-st.subheader("Data Engineer/Data Scientist")
+st.subheader("Data Engineer and Scientist/ Aspiring Data Engineer")
 
 # Brief introduction
 st.markdown("""
@@ -226,5 +322,29 @@ st.write("Feel free to reach out for collaborations or discussions!")
 # Close the main-content div
 st.markdown("""
     </div>
+    
+    <!-- Add JavaScript for better mobile experience -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 160,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Fix for iOS momentum scrolling
+        document.querySelector('.nav-menu').addEventListener('touchmove', function(e) {
+            e.stopPropagation();
+        }, { passive: true });
+    </script>
 """, unsafe_allow_html=True)
-

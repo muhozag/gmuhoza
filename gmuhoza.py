@@ -259,6 +259,7 @@ st.markdown("[CompTIA Security+](https://www.credly.com/badges/efba6f70-0835-4cb
 
 # Project Management
 st.markdown("#### Project Management")
+st.markdown("[Johns Hopkins University AI Strategy and Project Management](https://www.coursera.org/account/accomplishments/specialization/GKINAQPFA23R)")
 st.markdown("[Certified SAFe 5 Government Practitioner](https://www.credly.com/badges/3c850285-15e8-435d-865a-53669e7a0c9f/public_url)")
 
 # Data Science
